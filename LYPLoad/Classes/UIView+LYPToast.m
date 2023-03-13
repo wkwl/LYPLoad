@@ -91,6 +91,11 @@ static NSString *hideLoadKey = @"hideLoadArr";
     [self.hideToastArr addObject:toastView];
  
     [self addSubview:toastView];
+    [toastView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.equalTo(self);
+        make.width.mas_lessThanOrEqualTo([UIScreen mainScreen].bounds.size.width-20);
+        make.height.lessThanOrEqualTo(self).offset(-20);
+    }];
     [UIView animateWithDuration:0.3
                           delay:0.0
                         options:(UIViewAnimationOptionCurveEaseOut | UIViewAnimationOptionAllowUserInteraction)
@@ -111,16 +116,21 @@ static NSString *hideLoadKey = @"hideLoadArr";
 - (UIView *)toastView:(NSString *)msg {
     UIView *toastView = [[UIView alloc] init];
     toastView.backgroundColor = [UIColor blackColor];
-    toastView.bounds = CGRectMake(0, 0, 100, 100);
-    toastView.center = self.center;
     UILabel *nameLab = [[UILabel alloc] init];
     nameLab.text = msg;
     nameLab.textColor = [UIColor whiteColor];
+    nameLab.numberOfLines = 0;
     [toastView addSubview:nameLab];
-//    nameLab.backgroundColor = [UIColor redColor];
-    nameLab.bounds = CGRectMake(0, 0, 100, 100);
+    [nameLab mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(10);
+        make.right.mas_equalTo(-10);
+        make.top.mas_equalTo(5);
+        make.bottom.mas_equalTo(-5);
+    }];
+    toastView.layer.cornerRadius = 4;
+    nameLab.font = [UIFont systemFontOfSize:14];
     nameLab.textAlignment = NSTextAlignmentCenter;
-    nameLab.center = CGPointMake(50, 50);
+  
     return toastView;
 }
 
