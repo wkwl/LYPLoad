@@ -3,7 +3,7 @@
 //  loadingAnimation
 //
 //  Created by sgx_05 on 2023/3/13.
-//  Copyright © 2023 张永强. All rights reserved.
+//  Copyright © 2023 吴开稳. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
