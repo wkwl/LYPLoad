@@ -8,12 +8,18 @@
 
 #import "LYPLoadingView.h"
 
+@interface LYPLoadingView ()
+
+@property (nonatomic, assign) LYPLoadingType type;
+
+@end
+
 @implementation LYPLoadingView
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if(self){
-     
+  
 //        [self creatLineAnimation];
     }
     return self;
@@ -22,15 +28,19 @@
 - (instancetype)initWithLoadingType:(LYPLoadingType )loadType {
     self = [super initWithFrame: CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     if(self){
-        if(loadType == LYPLoadingTypeAnimationLine){
-            [self creatLineAnimation];
-        }else{
-            [self creatCircleAnimation];
-        }
+        self.type = loadType;
+      
     }
     return self;
 }
 
+- (void)startAnimation {
+    if(self.type == LYPLoadingTypeAnimationLine){
+        [self creatLineAnimation];
+    }else{
+        [self creatCircleAnimation];
+    }
+}
 
 - (void)creatCircleAnimation {
     //创建一个relicatorLayer对象

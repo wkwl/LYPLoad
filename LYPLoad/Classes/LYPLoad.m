@@ -49,7 +49,7 @@
     UIView *keyView = [UIApplication sharedApplication].keyWindow;
     [keyView addSubview:loadView];
     loadView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-
+    [loadView startAnimation];
    
 }
 
