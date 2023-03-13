@@ -1,0 +1,6 @@
+framework module LYPLoad {
+  umbrella header "LYPLoad-umbrella.h"
+
+  export *
+  module * { export * }
+}

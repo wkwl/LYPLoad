@@ -1,0 +1,27 @@
+PODS:
+  - Expecta (1.0.6)
+  - LYPLoad (1.0.0)
+  - Specta (2.0.0)
+
+DEPENDENCIES:
+  - Expecta
+  - LYPLoad (from `../`)
+  - Specta
+
+SPEC REPOS:
+  trunk:
+    - Expecta
+    - Specta
+
+EXTERNAL SOURCES:
+  LYPLoad:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  LYPLoad: 12244c22a9d70deade32a57a7444dac3706b2667
+  Specta: b79d84043684b35ffdc2680df578dc318ec2efc2
+
+PODFILE CHECKSUM: cded50a447087608e84ef30b30283eb0f7b58721
+
+COCOAPODS: 1.11.3
