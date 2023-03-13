@@ -37,6 +37,9 @@ pod 'LYPLoad'
 [LYPLoad hideLoading];
 ```
 
+### 示例图片
+![2016.00.41.png](https://github.com/wkwl/ImageSpec/blob/master/LYPLoad/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-03-13%20at%2016.00.41.png?raw=true){:width="320px"}
+![2016.01.08.png](https://github.com/wkwl/ImageSpec/blob/master/LYPLoad/Simulator%20Screen%20Shot%20-%20iPhone%2014%20Pro%20-%202023-03-13%20at%2016.01.08.png?raw=true){:width="320px"}
 ## Author
 
 sgx_05, 1877508948@qq.com
