@@ -20,6 +20,23 @@ it, simply add the following line to your Podfile:
 pod 'LYPLoad'
 ```
 
+### 首先引入头文件 
+```
+#import <LYPLoad.h>
+
+```
+### 使用说明
+```
+1.默认为圆圈点加载动画
+[LYPLoad showLoading];
+
+2.线性加载动画
+[LYPLoad showLoadingType:LYPLoadingTypeAnimationLine];
+
+3.加载动画隐藏
+[LYPLoad hideLoading];
+```
+
 ## Author
 
 sgx_05, 1877508948@qq.com
