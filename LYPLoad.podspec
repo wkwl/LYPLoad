@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYPLoad'
-  s.version          = '1.0.10'
+  s.version          = '1.1.0'
   s.summary          = 'LYPLoad'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+TODO: loading动画，避免同时弹出多个loading框
                        DESC
 
   s.homepage         = 'https://github.com/wkwl/LYPLoad'
