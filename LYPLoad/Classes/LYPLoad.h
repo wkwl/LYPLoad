@@ -26,6 +26,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void)shoLoadingCustomView:(UIView *)customView;
 
+
+
+/**
+ * toast
+ */
++(void)showToast:(NSString *)msg;
+
 @end
 
 NS_ASSUME_NONNULL_END

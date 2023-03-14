@@ -17,6 +17,8 @@ static NSString *hideToastKey = @"hideToastKey";
 
 static NSString *hideLoadKey = @"hideLoadArr";
 
+static NSString *toastKey = @"lyp_toastArr";
+
 @interface UIView ()
 
 //存放totastVIew 的数组
@@ -58,7 +60,18 @@ static NSString *hideLoadKey = @"hideLoadArr";
     return arr;
 }
 
+- (void)setLyp_toastArr:(NSMutableArray *)lyp_toastArr {
+    objc_setAssociatedObject(self, &toastKey, lyp_toastArr, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 
+- (NSMutableArray *)lyp_toastArr {
+    NSMutableArray *list = objc_getAssociatedObject(self, &toastKey);
+    if(list == nil){
+        list = [NSMutableArray array];
+        objc_setAssociatedObject(self, &toastKey, list, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    }
+    return list;
+}
 
 #pragma mark -
 - (void)showToast:(NSString *)msg {

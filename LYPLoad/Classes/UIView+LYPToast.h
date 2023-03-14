@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic,strong) NSMutableArray *hideLoadArr;
 
+@property (nonatomic,strong) NSMutableArray *lyp_toastArr;
+
 - (void)showToast:(NSString *)msg;
 
 
