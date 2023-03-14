@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LYPLoad'
-  s.version          = '1.0.7'
+  s.version          = '1.0.8'
   s.summary          = 'LYPLoad'
 
 # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/wkwl/LYPLoad'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sgx_05' => 'wkw0913@163.com' }
+  s.author           = { 'wkwl' => '1877508948@qq.com' }
   s.source           = { :git => 'https://github.com/wkwl/LYPLoad.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 

@@ -21,6 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 +(void)hideLoading;
 
+/**
+ *自定义加载视图
+ */
++(void)shoLoadingCustomView:(UIView *)customView;
+
 @end
 
 NS_ASSUME_NONNULL_END

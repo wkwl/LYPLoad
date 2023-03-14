@@ -1,6 +1,6 @@
 PODS:
   - Expecta (1.0.6)
-  - LYPLoad (1.0.5):
+  - LYPLoad (1.0.7):
     - Masonry (~> 1.1.0)
   - Masonry (1.1.0)
   - Specta (2.0.0)
@@ -22,7 +22,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
-  LYPLoad: 19186ed14be0e7aa7cbafa299ec3a7ec11e8acac
+  LYPLoad: 6b2474501f19519db3684324ed0162f5b6b03a3b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   Specta: b79d84043684b35ffdc2680df578dc318ec2efc2
 

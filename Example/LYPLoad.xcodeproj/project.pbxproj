@@ -24,6 +24,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9347319758F1F35D689669F1 /* Pods_LYPLoad_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 705A1EF1BBAE936EF2C0F0CE /* Pods_LYPLoad_Example.framework */; };
+		9425853F29C026CB00D893C3 /* LYPCustomLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9425853E29C026CB00D893C3 /* LYPCustomLoadView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		7817DB6F984A55DB7E495C4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8850AE93289755FCA94376A1 /* Pods-LYPLoad_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPLoad_Example.release.xcconfig"; path = "Target Support Files/Pods-LYPLoad_Example/Pods-LYPLoad_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9425853D29C026CB00D893C3 /* LYPCustomLoadView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LYPCustomLoadView.h; sourceTree = "<group>"; };
+		9425853E29C026CB00D893C3 /* LYPCustomLoadView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYPCustomLoadView.m; sourceTree = "<group>"; };
 		A8279A733F21492D167C45AC /* Pods-LYPLoad_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPLoad_Tests.release.xcconfig"; path = "Target Support Files/Pods-LYPLoad_Tests/Pods-LYPLoad_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		AAEBFE04B7DCDD1D5DE497FD /* Pods-LYPLoad_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LYPLoad_Example.debug.xcconfig"; path = "Target Support Files/Pods-LYPLoad_Example/Pods-LYPLoad_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		D05727AF40E2DEEB4E1130E3 /* LYPLoad.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LYPLoad.podspec; path = ../LYPLoad.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* LYPViewController.h */,
 				6003F5A6195388D20070C39A /* LYPViewController.m */,
+				9425853D29C026CB00D893C3 /* LYPCustomLoadView.h */,
+				9425853E29C026CB00D893C3 /* LYPCustomLoadView.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -388,6 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* LYPAppDelegate.m in Sources */,
+				9425853F29C026CB00D893C3 /* LYPCustomLoadView.m in Sources */,
 				6003F5A7195388D20070C39A /* LYPViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);

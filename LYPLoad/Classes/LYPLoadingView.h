@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger,LYPLoadingType) {
 - (instancetype)initWithLoadingType:(LYPLoadingType )loadType ;
 
 - (void)startAnimation;
+
 @end
 
 NS_ASSUME_NONNULL_END
