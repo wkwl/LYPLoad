@@ -53,10 +53,13 @@
 }
 
 + (void)addLoadView:(LYPLoadingView *)loadView {
-    UIView *keyView = [self getKeyWindow];
-    [keyView addSubview:loadView];
-    loadView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
-    [loadView startAnimation];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIView *keyView = [self getKeyWindow];
+        [keyView addSubview:loadView];
+        loadView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+        [loadView startAnimation];
+    });
+    
     
     //可以使用这种形式开发Toast
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -66,9 +69,12 @@
 }
 
 + (void)addLoadCustomView:(UIView *)customView{
-    UIView *keyView = [self getKeyWindow];
-    [keyView addSubview:customView];
-    customView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIView *keyView = [self getKeyWindow];
+        [keyView addSubview:customView];
+        customView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.3];
+    });
+ 
     //可以使用这种形式开发Toast
 //    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
 //        [self hideLoading];
@@ -136,21 +142,24 @@
 }
 
 +(void)addToastView:(UIView *)toastView {
-    toastView.alpha = 0.0;
-    UIView *windowView = [self getKeyWindow];
-    [windowView addSubview:toastView];
-    [toastView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.center.equalTo(windowView);
-        make.width.mas_lessThanOrEqualTo([UIScreen mainScreen].bounds.size.width-20);
-        make.height.lessThanOrEqualTo(windowView).offset(-20);
-    }];
-    [UIView transitionWithView:toastView duration:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
-        toastView.alpha = 1.0;
-    } completion:^(BOOL finished) {
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-            [self hideToast];
-        });
-    }];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        toastView.alpha = 0.0;
+        UIView *windowView = [self getKeyWindow];
+        [windowView addSubview:toastView];
+        [toastView mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(windowView);
+            make.width.mas_lessThanOrEqualTo([UIScreen mainScreen].bounds.size.width-20);
+            make.height.lessThanOrEqualTo(windowView).offset(-20);
+        }];
+        [UIView transitionWithView:toastView duration:2 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+            toastView.alpha = 1.0;
+        } completion:^(BOOL finished) {
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                [self hideToast];
+            });
+        }];
+    });
+  
 }
 
 
