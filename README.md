@@ -17,7 +17,10 @@ LYPLoad is available through [CocoaPods](https://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'LYPLoad'
+1.pod 'LYPLoad'
+
+2.也可以将LYPLoad/LYPLoad/Classes/中的内容拖进项目使用（需要自己添加Masonry）
+
 ```
 
 ### 首先引入头文件 
