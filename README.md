@@ -44,7 +44,15 @@ it, simply add the following line to your Podfile:
 [LYPLoad showToast:@"测试"];
 
 也可以这样使用（第一种比较局限只添加到window上）
-[self.view showToast:@"测试"];
+[self.view showToast:@"测试"];buhui
+
+
+同时调用多次如：
+[LYPLoad showLoading];
+[LYPLoad showLoading];
+
+不会同时出现在屏幕上，会在上一个隐藏后（[LYPLoad hideLoading]）再调起后面的加载框，避免了页面上同时出现多个加载框的问题，
+也不会产生像单例调用是，偶尔会出现第二个弹框尚未弹出就被隐藏了，导致屏幕上无加载弹框出现的问题。
 ```
 
 ### 示例图片
