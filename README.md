@@ -5,9 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/LYPLoad.svg?style=flat)](https://cocoapods.org/pods/LYPLoad)
 [![Platform](https://img.shields.io/cocoapods/p/LYPLoad.svg?style=flat)](https://cocoapods.org/pods/LYPLoad)
 
-## Example
+## Description 
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+加载动画(支持自定义)，Toast弹框
 
 ## Requirements
 

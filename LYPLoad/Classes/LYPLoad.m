@@ -95,8 +95,6 @@
     UIView *keyView = [UIApplication sharedApplication].keyWindow;
     if(keyView == nil){
         keyView= [[UIApplication sharedApplication].windows objectAtIndex:0];
-//        keyView = [[UIWindow alloc]initWithFrame:CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height)];
-//        [keyView makeKeyWindow];
     }
     return keyView;
 }
