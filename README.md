@@ -40,10 +40,10 @@ it, simply add the following line to your Podfile:
 [LYPLoad hideLoading];
 
 4.toast弹框使用
-a).添加到windows窗口
+
 [LYPLoad showToast:@"测试"];
 
-b).添加到指定view上，本例是添加在当前view上
+也可以这样使用（第一种比较局限只添加到window上）
 [self.view showToast:@"测试"];
 ```
 
