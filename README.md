@@ -38,6 +38,13 @@ it, simply add the following line to your Podfile:
 
 3.加载动画隐藏
 [LYPLoad hideLoading];
+
+4.toast弹框使用
+a).添加到windows窗口
+[LYPLoad showToast:@"测试"];
+
+b).添加到指定view上，本例是添加在当前view上
+[self.view showToast:@"测试"];
 ```
 
 ### 示例图片
