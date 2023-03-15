@@ -27,6 +27,7 @@
     gifView.bounds = CGRectMake(0, 0, 160, 160);
     gifView.center = customView.center;
     gifView.backgroundColor = [UIColor redColor];
+    [LYPLoad shoLoadingCustomView:customView];
     
    
     

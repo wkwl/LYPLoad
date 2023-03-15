@@ -39,6 +39,9 @@ it, simply add the following line to your Podfile:
 3.加载动画隐藏
 [LYPLoad hideLoading];
 
+
+自定义使用方式可参考：Example/LYPLoad/LYPViewController.m
+
 4.toast弹框使用
 
 [LYPLoad showToast:@"测试"];
