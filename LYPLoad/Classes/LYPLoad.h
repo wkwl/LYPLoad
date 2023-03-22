@@ -33,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 +(void)showToast:(NSString *)msg;
 
+
++ (UIView *)getKeyWindow;
+
 @end
 
 NS_ASSUME_NONNULL_END
