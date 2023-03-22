@@ -87,6 +87,7 @@
         [keyView.hideLoadArr addObject:customView];
     }else{
         [self addLoadCustomView:customView];
+        [keyView.hideLoadArr addObject:customView];
     }
 }
 

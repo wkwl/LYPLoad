@@ -10,6 +10,7 @@
 //#import <LYPLoad/LYPLoad.h>
 #import <LYPLoad.h>
 #import "LYPCustomLoadView.h"
+#import "LYPDragView.h"
 
 @interface LYPViewController ()
 
@@ -20,6 +21,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+  
+    [self setDragUI];
+}
+
+- (void)setLoadUI {
     LYPCustomLoadView *customView = [[LYPCustomLoadView alloc] init];
     customView.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
     UIView *gifView = [[UIView alloc] init];
@@ -27,7 +33,6 @@
     gifView.bounds = CGRectMake(0, 0, 160, 160);
     gifView.center = customView.center;
     gifView.backgroundColor = [UIColor redColor];
-    [LYPLoad shoLoadingCustomView:customView];
     
    
     
@@ -59,7 +64,16 @@
 //        [LYPLoad hideLoading];
 //    });
 
-   
+}
+
+- (void)setDragUI {
+    LYPDragView *dragView = [[LYPDragView alloc] init];
+    dragView.frame = CGRectMake(0, UIScreen.mainScreen.bounds.size.height-140, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height-100);
+    dragView.topSpace = 100;
+    [self.view addSubview:dragView];
+    dragView.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor redColor];
+    
 }
 
 - (void)didReceiveMemoryWarning
